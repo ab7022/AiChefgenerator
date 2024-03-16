@@ -1,7 +1,8 @@
 const express = require("express");
 const { User } = require("./database");
 const router = express.Router();
-
+const cors = require("cors");
+router.use(cors());
 router.post("/signup", async function signup(req, res) {
   const { name, username, password } = req.body;
   const existingUser = await User.findOne({ username });
