@@ -25,6 +25,11 @@ router.post("/signup", async function signup(req, res) {
 
   });
 });
+router.get("/",function main() {
+  res.json({
+    msg:"working fine"
+  })
+})
 router.post("/signin", async function signin(req, res) {
     const { username, password } = req.body;
     const existingUser = await User.findOne({ username });

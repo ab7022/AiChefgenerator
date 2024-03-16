@@ -16,7 +16,7 @@ const Login = () => {
   const signin = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:3000/signin",
+        "https://ai-chefgenerator.vercel.app/signin",
         { username, password }
       );
       setResponseMessage(response.data.msg);

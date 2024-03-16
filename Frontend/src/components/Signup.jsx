@@ -20,7 +20,7 @@ const Signup = () => {
   console.log(password);
   const signup = async () => {
     try {
-      const response = await axios.post("http://localhost:3000/signup", {
+      const response = await axios.post("https://ai-chefgenerator.vercel.app/signup", {
         name,
         username,
         password,
