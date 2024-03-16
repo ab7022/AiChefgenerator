@@ -30,7 +30,7 @@ const Signup = () => {
       if (response.data.msg === "Login successful") {
       
         login(response.data.user);
-        navigate("/home");
+        navigate("/dashboard");
       }
     } catch (error) {
       console.error("Error during signup:", error);

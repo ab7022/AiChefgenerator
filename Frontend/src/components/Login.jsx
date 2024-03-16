@@ -73,7 +73,7 @@ const Login = () => {
               type="button"
               onClick={signin}
             >
-              Sign Up
+              Sign In
             </button>
           </form>
 
