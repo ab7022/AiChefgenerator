@@ -25,7 +25,7 @@ router.post("/signup", async function signup(req, res) {
 
   });
 });
-router.get("/",function main() {
+router.get("/",function main(req,res) {
   res.json({
     msg:"working fine"
   })
